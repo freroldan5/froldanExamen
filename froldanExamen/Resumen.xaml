@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="froldanExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Resumen" FontSize="20" TextColor="Blue" HorizontalTextAlignment="Center"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" WidthRequest="100" HeightRequest="100"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="lblUsuario" Placeholder="Usuario" Grid.Row="0" Grid.Column="1" IsEnabled="False"/>
+                <Label Text="Nombre" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="lblNombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="1" IsEnabled="False"/>
+                <Label Text="Total a Pagar" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="lbltotal" Placeholder="Total a pagar" Grid.Row="2" Grid.Column="1" IsEnabled="False"/>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
